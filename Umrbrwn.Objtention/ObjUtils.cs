@@ -25,6 +25,17 @@ namespace Umrbrwn.Objtention
         {
             return str1.Equals(str2, StringComparison.OrdinalIgnoreCase);
         }
+        
+        /// <summary>
+        /// Checks if this sring equals to any given string params, while ignoring case
+        /// </summary>
+        /// <param name="str">This string</param>
+        /// <param name="val">String array to compare with</param>
+        /// <returns>Returns true if string params contains this string</returns>
+        public static bool EqualsIgnoreCase(this string str, params string[] val)
+        {
+            return val.Any(e => e.IndexOf(str, StringComparison.OrdinalIgnoreCase) >= 0);
+        }
 
         /// <summary>
         /// Converts this object into integer

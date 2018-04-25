@@ -30,6 +30,15 @@ namespace Umrbrwn.Objtention.Tests
         {
             Assert.IsTrue("umrbrwn".EqualsIgnoreCase("umrbrwn"));
         }
+        
+        [TestMethod]
+        public void EqualIgnoreCase_ContainsString_TTTF()
+        {
+            Assert.IsTrue("A".EqualsIgnoreCase("B", "a", "C"));
+            Assert.IsTrue("A".EqualsIgnoreCase("A", "0", "1"));
+            Assert.IsTrue("a".EqualsIgnoreCase("A", "0", "1"));
+            Assert.IsFalse("B".EqualsIgnoreCase("A", "0", "1"));
+        }
 
         [TestMethod]
         public void ToInt_NullRef_Ret0()
