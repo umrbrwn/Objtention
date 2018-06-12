@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Umrbrwn.Objtention
 {
@@ -56,12 +57,12 @@ namespace Umrbrwn.Objtention
         /// <typeparam name="T">Target primitive type</typeparam>
         /// <param name="obj">This object</param>
         /// <returns>Returns default value of type T when object is null, DBNull or empty string type</returns>
-        public static T ToType<T>(this object obj) where T : struct
+        public static T ToType<T>(this object obj) where T : struct, IConvertible
         {
             if (obj == null || string.IsNullOrEmpty(obj.ToString()) || obj == DBNull.Value)
                 return default(T);
 
-            return (T)obj;
+            return (T)Convert.ChangeType(obj, typeof(T), System.Globalization.CultureInfo.InvariantCulture);
         }
 
         ///         /// <summary>
@@ -70,7 +71,7 @@ namespace Umrbrwn.Objtention
         /// <typeparam name="T">Target Nullable type</typeparam>
         /// <param name="obj">This object</param>
         /// <returns>Returns default value of type T when object is null, DBNull or empty string type</returns>
-        public static Nullable<T> ToNullableType<T>(this object obj) where T : struct
+        public static Nullable<T> ToNullableType<T>(this object obj) where T : struct, IConvertible
         {
             Nullable<T> result = new Nullable<T>();
             try

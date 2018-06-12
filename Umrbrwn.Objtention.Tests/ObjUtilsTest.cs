@@ -30,7 +30,7 @@ namespace Umrbrwn.Objtention.Tests
         {
             Assert.IsTrue("umrbrwn".EqualsIgnoreCase("umrbrwn"));
         }
-        
+
         [TestMethod]
         public void EqualIgnoreCase_ContainsString_TTTF()
         {
@@ -104,6 +104,46 @@ namespace Umrbrwn.Objtention.Tests
         {
             double expected = 0;
             double actual = (double.PositiveInfinity).ToPrecised();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ToType_StringToInt()
+        {
+            int expected = 100001;
+            var actual = "100001".ToType<int>();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ToType_ObjectToInt()
+        {
+            double expected = 99.0001d;
+            var actual = "99.0001".ToType<double>();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ToType_StringToDateTime()
+        {
+            System.DateTime expected = new System.DateTime(2018, 06, 05);
+            var actual = "2018-06-05T00:00:00".ToType<System.DateTime>();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ToType_StringToDouble()
+        {
+            double expected = 99.0001d;
+            var actual = "99.0001".ToType<double>();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ToType_ObjectToDecimal()
+        {
+            double expected = 99.0001d;
+            var actual = ((object)99.0001d).ToType<double>();
             Assert.AreEqual(expected, actual);
         }
     }
