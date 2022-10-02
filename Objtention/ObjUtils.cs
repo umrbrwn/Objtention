@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Umrbrwn.Objtention
+namespace Objtention
 {
     public static class ObjUtils
     {
@@ -85,7 +85,7 @@ namespace Umrbrwn.Objtention
         }
 
         /// <summary>
-        /// Rounds the given value to <seealso cref="Umrbrwn.Objtention.Constants">specified precision</seealso>
+        /// Rounds the given value to <seealso cref="Objtention.Constants">specified precision</seealso>
         /// </summary>
         /// <param name="value">Input value</param>
         /// <returns>Precise value</returns>
@@ -105,7 +105,7 @@ namespace Umrbrwn.Objtention
         }
 
         /// <summary>
-        /// Rounds the given value to <seealso cref="Umrbrwn.Objtention.Constants">specified precision</seealso>
+        /// Rounds the given value to <seealso cref="Objtention.Constants">specified precision</seealso>
         /// </summary>
         /// <param name="value">Input value</param>
         /// <returns>Returns 0 if value is NaN or Infinity otherwise Precise value</returns>

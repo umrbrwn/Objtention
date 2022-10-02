@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Umrbrwn.Objtention
+namespace Objtention
 {
     /// <summary>
     /// Fiscal year, with actual starting and ending dates of fiscal year

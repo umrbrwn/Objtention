@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Umrbrwn.Objtention.Tests
+namespace Objtention.Tests
 {
     class Student
     {

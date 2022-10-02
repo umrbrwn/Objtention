@@ -7,8 +7,8 @@
     <ProjectGuid>{E3EEDF57-79EA-42BB-8BF6-4371A76BCD6D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Umrbrwn.Objtention</RootNamespace>
-    <AssemblyName>Umrbrwn.Objtention</AssemblyName>
+    <RootNamespace>Objtention</RootNamespace>
+    <AssemblyName>Objtention</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

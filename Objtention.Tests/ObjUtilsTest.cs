@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Umrbrwn.Objtention.Tests
+namespace Objtention.Tests
 {
     [TestClass]
     public class ObjUtilsTest

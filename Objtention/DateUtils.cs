@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Umrbrwn.Objtention
+namespace Objtention
 {
     public static class DateUtils
     {

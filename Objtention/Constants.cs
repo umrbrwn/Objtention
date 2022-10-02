@@ -1,4 +1,4 @@
-﻿namespace Umrbrwn.Objtention
+﻿namespace Objtention
 {
     /// <summary>
     /// Holds all the constant values

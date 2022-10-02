@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Umrbrwn.Objtention
+namespace Objtention
 {
     /// <summary>
     /// Represents a named month
